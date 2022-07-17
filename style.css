@@ -228,3 +228,145 @@ main section div:last-child{
     color:white;
     padding:20px 0;
 }
+
+/* CLASSLIST */
+/* #### Backgrounds */
+
+/* --Very-dark-desaturated-blue-main-background: hsl(222, 26%, 31%);
+--Very-dark-desaturated-blue-toggle-background-keypad-background: hsl(223, 31%, 20%);
+--Very-dark-desaturated-blue-screen-background: hsl(224, 36%, 15%); */
+
+/* #### Keys */
+
+/* --Desaturated-dark-blue-key-background: hsl(225, 21%, 49%);
+--Desaturated-dark-blue-key-shadow: hsl(224, 28%, 35%);
+
+--Red-key-background-toggle: hsl(6, 63%, 50%);
+--Dark-red-key-shadow: hsl(6, 70%, 34%);
+
+--Light-grayish-orange-key-background: hsl(30, 25%, 89%);
+--Grayish-orange-key-shadow: hsl(28, 16%, 65%); */
+
+/* #### Text */
+
+/* --Very-dark-grayish-blue: hsl(221, 14%, 31%);
+--White: hsl(0, 0, 100%); */
+
+.changeBg1{
+    background-color: var(--Very-dark-desaturated-blue-screen-background);
+}
+.changeBg1P{
+    color:var(--White);
+}
+.changeBg1Screen{
+    background-color: var(--Very-dark-desaturated-blue-main-background);
+    /* background-color: var(--Very-dark-desaturated-blue-screen-background) */
+}
+.changeBg1Section{
+    background-color: var(--Very-dark-desaturated-blue-toggle-background-keypad-background);
+}
+.changeBg1SectionButton{
+    background-color: var(--Desaturated-dark-blue-key-background);
+    box-shadow: 0 4px var(--Desaturated-dark-blue-key-shadow);
+}
+/* --Light-grayish-orange-key-background: hsl(30, 25%, 89%); */
+/* --Grayish-orange-key-shadow: hsl(28, 16%, 65%); */
+.changeBg1SectionButton17th{
+    background-color: var(--);
+    box-shadow: 0 4px var(--Soft-cyan-key-shadow);
+}
+.changeBg1SectionButtonlastChild{
+    background-color: var(--Light-grayish-orange-key-background);
+    box-shadow:0 4px var(--Grayish-orange-key-shadow);
+}
+/* --Light-gray-main-background: hsl(0, 0%, 90%);
+--Grayish-red-toggle-background-keypad-background: hsl(0, 5%, 81%);
+--Very-light-gray-screen-background: hsl(0, 0%, 93%); */
+
+/* #### Keys */
+
+/* --Dark-moderate-cyan-key-background: hsl(185, 42%, 37%);
+--Very-dark-cyan-key-shadow: hsl(185, 58%, 25%);
+
+--Orange-key-background-toggle: hsl(25, 98%, 40%);
+--Dark-orange-key-shadow: hsl(25, 99%, 27%);
+
+--Light-grayish-yellow-key-background: hsl(45, 7%, 89%);
+--Dark-grayish-orange-key-shadow: hsl(35, 11%, 61%); */
+.changeBg2{
+    background-color: var(--Light-gray-main-background);
+}
+.changeBg2P{
+    color:black;
+}
+.changeBg2Screen{
+    background-color: var(--Grayish-red-toggle-background-keypad-background);
+    color:black;
+}
+.changeBg2Section{
+    background-color: var(--Grayish-red-toggle-background-keypad-background);
+    color:black;
+}
+.changeBg2SectionButton{
+    background-color: var(--Orange-key-background-toggle);
+    box-shadow: 0 4px var(--Dark-orange-key-shadow);
+}
+.changeBg2SectionButton17th{
+    background-color: var(--Pure-cyan-key-background-toggle);
+    box-shadow: 0 4px var(--Soft-cyan-key-shadow);
+}
+.changeBg2SectionButtonlastChild{
+    background-color: var(--Light-grayish-yellow-key-background);
+    color:white;
+}
+
+
+/* #### Backgrounds */
+
+/* --Very-dark-violet-main-background: hsl(268, 75%, 9%);
+--Very-dark-violet-toggle-background-keypad-background-screen-background: hsl(268, 71%, 12%); */
+
+/* #### Keys */
+
+/* --Dark-violet-key-background: hsl(281, 89%, 26%);
+--Vivid-magenta-key-shadow: hsl(285, 91%, 52%);
+
+--Pure-cyan-key-background-toggle: hsl(176, 100%, 44%);
+--Soft-cyan-key-shadow: hsl(177, 92%, 70%);
+
+--Very-dark-violet-key-background: hsl(268, 47%, 21%);
+--Dark-magenta-key-shadow: hsl(290, 70%, 36%); */
+
+/* #### Text */
+
+/* --Light-yellow: hsl(52, 100%, 62%);
+--Very-dark-blue: hsl(198, 20%, 13%);
+--White-text: hsl(0, 0, 100%);
+} */
+
+.changeBg3{
+    background-color: var(--Very-dark-violet-main-background);
+}
+.changeBg3P{
+    color:var(--Light-yellow);
+}
+.changeBg3Screen{
+    background-color: var(--Very-dark-violet-toggle-background-keypad-background-screen-background);
+    color:var(--Light-yellow);
+}
+.changeBg3Section{
+    background-color: var(--Dark-violet-key-background);
+    /* color:var(darkvi) */
+}
+.changeBg3SectionButton{
+    background-color: var(--Pure-cyan-key-background-toggle);
+    box-shadow: 0 4px var(--Soft-cyan-key-shadow);
+}
+.changeBg3SectionButton17th{
+    background-color: var(--Very-dark-violet-key-background);
+    box-shadow: 0 4px var(--Dark-magenta-key-shadow)
+}
+.changeBg3SectionButtonlastChild{
+    background-color: var(--Pure-cyan-key-background-toggle);
+    color:var(--Very-dark-blue);
+}

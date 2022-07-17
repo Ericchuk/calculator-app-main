@@ -1,7 +1,59 @@
+let boxNum = document.querySelectorAll(".change p");
+console.log(boxNum);
+let article = document.querySelector("article");
+// let articleP = document.querySelectorAll("article p");
+let ballBox = document.querySelector(".box");
+let screenValue = document.querySelector("main h1");
+let buttonBox = document.querySelector("main section");
+let numbers = document.querySelectorAll("main .number");
+
+for(let i = 0; i < boxNum.length; i++){
+    function change(){
+        if(boxNum[i].textContent == 1){
+            console.log("111");
+            article.classList.add("changeBg1");
+            // articleP.classList.add("changeBg3P")
+            screenValue.classList.add("changeBg1");
+            article.classList.add("changeBg1Screen");
+            buttonBox.classList.add("changeBg1");
+            article.classList.remove("changeBg3", "changeBg2");
+            // articleP.classList.add("changeBg3P")
+            screenValue.classList.remove("changeBg3", "changeBg2");
+            article.classList.remove("changeBg3Screen", "changeBg2");
+            buttonBox.classList.remove("changeBg3", "changeBg2");
+        }else if(boxNum[i].textContent == 2){
+            console.log("222");
+            article.classList.add("changeBg2");
+            // articleP.classList.add("changeBg3P")
+            screenValue.classList.add("changeBg2");
+            article.classList.add("changeBg2Screen");
+            buttonBox.classList.add("changeBg2");
+            article.classList.remove("changeBg3", "changeBg1");
+            // articleP.classList.add("changeBg3P")
+            screenValue.classList.remove("changeBg3", "changeBg1");
+            article.classList.remove("changeBg3Screen", "changeBg1");
+            buttonBox.classList.remove("changeBg3", "changeBg1");
+        }else if(boxNum[i].textContent == 3){
+            console.log("333");
+            // article.style.backgroundColor = "var(--Dark-violet-key-background)";
+            // bottonBox.style.backgroundColor = "var(--Very-dark-violet-key-background)";
+            article.classList.add("changeBg3");
+            // articleP.classList.add("changeBg3P")
+            screenValue.classList.add("changeBg3");
+            article.classList.add("changeBg3Screen");
+            buttonBox.classList.add("changeBg3");
+        }
+        
+    }
+    boxNum[i].addEventListener("click", change);
+}
+
+
+
 let ball = document.querySelector(".ball");
 let box = document.querySelector(".box");
 let screen = document.querySelector("h1");
-let numbers = document.querySelectorAll("main .number");
+// let numbers = document.querySelectorAll("main .number");
 let keys = document.querySelectorAll("main .number").textContent;
 let operator = document.querySelectorAll("main .operator");
 let opKeys = document.querySelectorAll("main .operator").textContent;
