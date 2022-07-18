@@ -200,16 +200,19 @@ main section div{
     color:var(--Very-dark-grayish-blue);
     box-shadow: inset 0px -4px var(--Grayish-orange-key-shadow);
 }
-main section div:nth-child(4){
+main section div.operator{
     background-color: var(--Desaturated-dark-blue-key-background);
     box-shadow: inset 0px -4px var(--Desaturated-dark-blue-key-shadow);
     color:white;
     font-size: 20px;
+    height:75px;
+    text-align: center;
+    margin-top:15px;
     padding: 27px 0;
     font-weight: lighter;
 }
-main section div:last-child,
-main section div:nth-child(17){
+main section div.equal,
+main section div.operator2{
     width:45%;
     font-size: 20px;
     color:white;
@@ -255,6 +258,9 @@ main section div:last-child{
 .changeBg1{
     background-color: var(--Very-dark-desaturated-blue-screen-background);
 }
+.change1Ball{
+    left:10px;
+}
 .changeBg1P{
     color:var(--White);
 }
@@ -295,9 +301,14 @@ main section div:last-child{
 --Dark-grayish-orange-key-shadow: hsl(35, 11%, 61%); */
 .changeBg2{
     background-color: var(--Light-gray-main-background);
+    color:black;
 }
 .changeBg2P{
     color:black;
+    height:auto;
+}
+.change2Ball{
+        left:30px;
 }
 .changeBg2Screen{
     background-color: var(--Grayish-red-toggle-background-keypad-background);
@@ -312,7 +323,7 @@ main section div:last-child{
     box-shadow: 0 4px var(--Dark-orange-key-shadow);
 }
 .changeBg2SectionButton17th{
-    background-color: var(--Pure-cyan-key-background-toggle);
+    background-color:var(--Pure-cyan-key-background-toggle);
     box-shadow: 0 4px var(--Soft-cyan-key-shadow);
 }
 .changeBg2SectionButtonlastChild{
@@ -349,6 +360,15 @@ main section div:last-child{
 }
 .changeBg3P{
     color:var(--Light-yellow);
+}
+.change3Ball{
+    left:55px;
+}
+.changeBg3PBack{
+    color:var(--Light-yellow);
+    background-color: var(--Dark-violet-key-background);
+    box-shadow: 0 4px var(--Vivid-magenta-key-shadow);
+    height:69px;
 }
 .changeBg3Screen{
     background-color: var(--Very-dark-violet-toggle-background-keypad-background-screen-background);
