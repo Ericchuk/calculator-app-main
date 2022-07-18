@@ -197,6 +197,7 @@ main section div{
     margin:10px 5px;
     font-size: 35px;
     font-weight: 900;
+    cursor: pointer;
     background-color: var(--Light-grayish-orange-key-background);
     color:var(--Very-dark-grayish-blue);
     box-shadow: inset 0px -4px var(--Grayish-orange-key-shadow);
