@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let boxNum = document.querySelectorAll(".change p");
 console.log(boxNum);
 let article = document.querySelector("article");
@@ -176,13 +177,13 @@ for(let i = 0; i < numbers.length; i++){
     numbers[i].addEventListener("click", eachValuetoscreen);
 }
 
-let equal = document.querySelector("main div:last-child");
-function evaluate(){
-    if(holder != "" && holder2 != "" && operator != ""){
-        result = `${holder} ${operator} ${holder2}`
-        screen.textContent = result; 
-    }
-}
+// let equal = document.querySelector("main div:last-child");
+// function evaluate(){
+//     if(holder != "" && holder2 != "" && operator != ""){
+//         result = `${holder} ${operator} ${holder2}`
+//         screen.textContent = result; 
+//     }
+// }
 equal.addEventListener("click", evaluate);
 // for(let i = 0; i < operator.length; i++){
 //     function useOperator(){
@@ -204,5 +205,3 @@ equal.addEventListener("click", evaluate);
 
 // function clearVar(name = ""){
 //     holder2 += `${holder} ${name} `;
-
-// }
