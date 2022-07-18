@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let boxNum = document.querySelectorAll(".change p");
 console.log(boxNum);
 let article = document.querySelector("article");
@@ -9,23 +8,14 @@ let buttonBox = document.querySelector("main section");
 let button = document.querySelectorAll("main section div");
 let ballInBox = document.querySelector(".ball")
 let buttonOp = document.querySelector(".operator");
-// let numbers = document.querySelector("main .number");
 
 for(let i = 0; i < boxNum.length; i++){
     function change(){
         if(boxNum[i].textContent == 1){
             console.log("111");
-            // article.classList.add("changeBg1");
-            // ballBox.classList.add("changeBg1Screen");
             ballBox.classList.remove("changeBg2Screen", "changeBg3Screen")
             ballInBox.classList.remove("change2Ball", "change3Ball");
-            // screenValue.classList.add("changeBg1");
-            // article.classList.add("changeBg1Screen");
-            // buttonBox.classList.add("changeBg1");
             article.classList.remove("changeBg3", "changeBg2");
-            // articleP[0].classList.add("changeBg1P");
-            // articleP[1].classList.add("changeBg1P");
-            // articleP[2].classList.add("changeBg1P");
             articleP[0].classList.remove("changeBg3P", "changeBg2P");
             articleP[1].classList.remove("changeBg3P", "changeBg2P");
             articleP[2].classList.remove("changeBg3P", "changeBg2P");
@@ -34,8 +24,6 @@ for(let i = 0; i < boxNum.length; i++){
             button[0].classList.remove("changeBg3PBack", "changeBg2P");
             button[1].classList.remove("changeBg3PBack", "changeBg2P");
             button[2].classList.remove("changeBg3PBack", "changeBg2P");
-            // buttonOp.textContent = "200";
-            // buttonOp.classList.add("changeBg2SectionButton17th");
             button[4].classList.remove("changeBg3PBack", "changeBg2P");
             button[5].classList.remove("changeBg3PBack", "changeBg2P");
             button[6].classList.remove("changeBg3PBack", "changeBg2P");
@@ -63,16 +51,12 @@ for(let i = 0; i < boxNum.length; i++){
             articleP[1].classList.remove("changeBg3P", "changeBg1P");
             articleP[2].classList.remove("changeBg3P", "changeBg1P");
             screenValue.classList.add("changeBg2Screen");
-            // screenValue.innerHTML.classList.add("changeBg2Screen");
-            // article.classList.add("changeBg2Screen");
             button[0].classList.add("changeBg2P");
             button[0].classList.remove("changeBg3PBack");
             button[1].classList.add("changeBg2P");
             button[1].classList.remove("changeBg3PBack");
             button[2].classList.add("changeBg2P");
             button[2].classList.remove("changeBg3PBack");
-            // buttonOp.textContent = "200";
-            // buttonOp.classList.add("changeBg2SectionButton17th");
             button[4].classList.add("changeBg2P");
             button[4].classList.remove("changeBg3PBack");
             button[5].classList.add("changeBg2P");
@@ -103,7 +87,6 @@ for(let i = 0; i < boxNum.length; i++){
             button[17].classList.remove("changeBg3P");
             buttonBox.classList.add("changeBg2Screen");
             article.classList.remove("changeBg3", "changeBg1");
-            // // articleP.classList.add("changeBg3P")
             screenValue.classList.remove("changeBg3", "changeBg1");
             article.classList.remove("changeBg3Screen", "changeBg1");
             buttonBox.classList.remove("changeBg3", "changeBg1");
@@ -113,7 +96,6 @@ for(let i = 0; i < boxNum.length; i++){
             ballBox.classList.add("changeBg3");
             ballInBox.classList.add("change3Ball");
             ballInBox.classList.remove("change2Ball");
-            // ballBox.classList.remove("changeBg2Screen", "changeBg1Screen")
             articleP[0].classList.add("changeBg3P");
             articleP[1].classList.add("changeBg3P");
             articleP[2].classList.add("changeBg3P");
@@ -122,8 +104,6 @@ for(let i = 0; i < boxNum.length; i++){
             button[0].classList.add("changeBg3PBack");
             button[1].classList.add("changeBg3PBack");
             button[2].classList.add("changeBg3PBack");
-            // buttonOp.textContent = "200";
-            // buttonOp.classList.add("changeBg2SectionButton17th");
             button[4].classList.add("changeBg3PBack");
             button[5].classList.add("changeBg3PBack");
             button[6].classList.add("changeBg3PBack");
@@ -136,8 +116,6 @@ for(let i = 0; i < boxNum.length; i++){
             button[13].classList.add("changeBg3PBack");
             button[14].classList.add("changeBg3PBack");
             button[15].classList.add("changeBg3PBack");
-            // button[16].classList.add("changeBg3P");
-            // button[17].classList.add("changeBg3P");
             buttonBox.classList.add("changeBg3");
         }
         
@@ -147,8 +125,6 @@ for(let i = 0; i < boxNum.length; i++){
 
 
 
-// let ball = document.querySelector(".ball");
-// let box = document.querySelector(".box");
 let screen = document.querySelector("h1");
 let numbers = document.querySelectorAll("main .number");
 let keys = document.querySelectorAll("main .number").textContent;
@@ -159,7 +135,7 @@ let holder2 = '';
 let operatorHolder = "";
 let result = null;
 let haveDecimalPoint = false;
-// console.log(numbers);
+
 for(let i = 0; i < numbers.length; i++){
     function eachValuetoscreen(){
         if(numbers[i].textContent === "." && !haveDecimalPoint){
@@ -184,7 +160,7 @@ for(let i = 0; i < numbers.length; i++){
 //         screen.textContent = result; 
 //     }
 // }
-equal.addEventListener("click", evaluate);
+// equal.addEventListener("click", evaluate);
 // for(let i = 0; i < operator.length; i++){
 //     function useOperator(){
 //         if(!holder){

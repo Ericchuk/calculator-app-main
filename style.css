@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@600;700&family=Barlow:wght@400;600&family=Be+Vietnam+Pro:wght@400;500;700&family=Big+Shoulders+Display:wght@700&family=Commissioner:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@300;400;500;700&family=Josefin+Sans:wght@300;400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@500;600;700&family=Lexend+Deca&family=Manrope:wght@500;600;700;800&family=Open+Sans:wght@400;700&family=Outfit:wght@400;700;800&family=Overpass:wght@300;600&family=Poppins:wght@500;700&family=Public+Sans:wght@300;400;700&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Space+Mono:wght@700&family=Ubuntu:wght@400;500;700&display=swap');
 :root{
     /* ### Theme 1 */
@@ -144,7 +143,8 @@ nav div p{
     color:white;
     top:-30px;
     font-size: 15px;
-    margin:0 5px;
+    padding:2px 5px;
+    cursor: pointer;
 }
 
 div p:first-child{
@@ -233,12 +233,29 @@ main section div:last-child{
     padding:20px 0;
 }
 
+@media screen and (min-width:500px) {
+    .container{
+        padding:30px 20%;
+    }
+}
+@media screen and (min-width:700px) {
+    .container{
+        padding:30px 25%;
+    }
+}
+@media screen and (min-width:1000px) {
+    .container{
+        padding:30px 30%;
+    }
+}
+@media screen and (min-width:1300px) {
+    .container{
+        padding:30px 33%;
+    }
+}
 /* CLASSLIST */
 .changeBg1{
     background-color: var(--Very-dark-desaturated-blue-screen-background);
-}
-.change1Ball{
-    left:10px;
 }
 .changeBg1P{
     color:var(--White);
@@ -273,6 +290,9 @@ main section div:last-child{
 .change2Ball{
         left:30px;
 }
+.change2Ball:hover{
+    box-shadow: 0 2px 8px 0 var(--Grayish-red-toggle-background-keypad-background);
+}
 .changeBg2Screen{
     background-color: var(--Grayish-red-toggle-background-keypad-background);
     color:black;
@@ -301,6 +321,10 @@ main section div:last-child{
 }
 .change3Ball{
     left:55px;
+    background-color: var(--Soft-cyan-key-shadow);
+}
+.change3Ball:hover{
+    box-shadow: 0 2px 8px 0 var(--Soft-cyan-key-shadow);
 }
 .changeBg3PBack{
     color:var(--Light-yellow);
