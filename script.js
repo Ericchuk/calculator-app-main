@@ -1,46 +1,142 @@
 let boxNum = document.querySelectorAll(".change p");
 console.log(boxNum);
 let article = document.querySelector("article");
-// let articleP = document.querySelectorAll("article p");
+let articleP = document.querySelectorAll("article p");
 let ballBox = document.querySelector(".box");
 let screenValue = document.querySelector("main h1");
 let buttonBox = document.querySelector("main section");
-let numbers = document.querySelectorAll("main .number");
+let button = document.querySelectorAll("main section div");
+let ballInBox = document.querySelector(".ball")
+let buttonOp = document.querySelector(".operator");
+// let numbers = document.querySelector("main .number");
 
 for(let i = 0; i < boxNum.length; i++){
     function change(){
         if(boxNum[i].textContent == 1){
             console.log("111");
-            article.classList.add("changeBg1");
-            // articleP.classList.add("changeBg3P")
-            screenValue.classList.add("changeBg1");
-            article.classList.add("changeBg1Screen");
-            buttonBox.classList.add("changeBg1");
+            // article.classList.add("changeBg1");
+            // ballBox.classList.add("changeBg1Screen");
+            ballBox.classList.remove("changeBg2Screen", "changeBg3Screen")
+            ballInBox.classList.remove("change2Ball", "change3Ball");
+            // screenValue.classList.add("changeBg1");
+            // article.classList.add("changeBg1Screen");
+            // buttonBox.classList.add("changeBg1");
             article.classList.remove("changeBg3", "changeBg2");
-            // articleP.classList.add("changeBg3P")
-            screenValue.classList.remove("changeBg3", "changeBg2");
+            // articleP[0].classList.add("changeBg1P");
+            // articleP[1].classList.add("changeBg1P");
+            // articleP[2].classList.add("changeBg1P");
+            articleP[0].classList.remove("changeBg3P", "changeBg2P");
+            articleP[1].classList.remove("changeBg3P", "changeBg2P");
+            articleP[2].classList.remove("changeBg3P", "changeBg2P");
+            screenValue.classList.remove("changeBg3", "changeBg2Screen");
             article.classList.remove("changeBg3Screen", "changeBg2");
-            buttonBox.classList.remove("changeBg3", "changeBg2");
+            button[0].classList.remove("changeBg3PBack", "changeBg2P");
+            button[1].classList.remove("changeBg3PBack", "changeBg2P");
+            button[2].classList.remove("changeBg3PBack", "changeBg2P");
+            // buttonOp.textContent = "200";
+            // buttonOp.classList.add("changeBg2SectionButton17th");
+            button[4].classList.remove("changeBg3PBack", "changeBg2P");
+            button[5].classList.remove("changeBg3PBack", "changeBg2P");
+            button[6].classList.remove("changeBg3PBack", "changeBg2P");
+            button[7].classList.remove("changeBg3PBack", "changeBg2P");
+            button[8].classList.remove("changeBg3PBack", "changeBg2P");
+            button[9].classList.remove("changeBg3PBack", "changeBg2P");
+            button[10].classList.remove("changeBg3PBack", "changeBg2P");
+            button[11].classList.remove("changeBg3PBack", "changeBg2P");
+            button[12].classList.remove("changeBg3PBack", "changeBg2P");
+            button[13].classList.remove("changeBg3PBack", "changeBg2P");
+            button[14].classList.remove("changeBg3PBack", "changeBg2P");
+            button[15].classList.remove("changeBg3PBack", "changeBg2P");
+            buttonBox.classList.remove("changeBg3", "changeBg2Screen");
         }else if(boxNum[i].textContent == 2){
             console.log("222");
             article.classList.add("changeBg2");
-            // articleP.classList.add("changeBg3P")
-            screenValue.classList.add("changeBg2");
-            article.classList.add("changeBg2Screen");
-            buttonBox.classList.add("changeBg2");
+            ballBox.classList.add("changeBg2Screen");
+            ballBox.classList.remove("changeBg1", "changeBg3")
+            ballInBox.classList.add("change2Ball");
+            ballInBox.classList.remove("change3Ball");
+            articleP[0].classList.add("changeBg2P");
+            articleP[1].classList.add("changeBg2P");
+            articleP[2].classList.add("changeBg2P");
+            articleP[0].classList.remove("changeBg3P", "changeBg1P");
+            articleP[1].classList.remove("changeBg3P", "changeBg1P");
+            articleP[2].classList.remove("changeBg3P", "changeBg1P");
+            screenValue.classList.add("changeBg2Screen");
+            // screenValue.innerHTML.classList.add("changeBg2Screen");
+            // article.classList.add("changeBg2Screen");
+            button[0].classList.add("changeBg2P");
+            button[0].classList.remove("changeBg3PBack");
+            button[1].classList.add("changeBg2P");
+            button[1].classList.remove("changeBg3PBack");
+            button[2].classList.add("changeBg2P");
+            button[2].classList.remove("changeBg3PBack");
+            // buttonOp.textContent = "200";
+            // buttonOp.classList.add("changeBg2SectionButton17th");
+            button[4].classList.add("changeBg2P");
+            button[4].classList.remove("changeBg3PBack");
+            button[5].classList.add("changeBg2P");
+            button[5].classList.remove("changeBg3PBack");
+            button[6].classList.add("changeBg2P");
+            button[6].classList.remove("changeBg3PBack");
+            button[7].classList.add("changeBg2P");
+            button[7].classList.remove("changeBg3PBack");
+            button[8].classList.add("changeBg2P");
+            button[8].classList.remove("changeBg3PBack");
+            button[9].classList.add("changeBg2P");
+            button[9].classList.remove("changeBg3PBack");
+            button[10].classList.add("changeBg2P");
+            button[10].classList.remove("changeBg3PBack");
+            button[11].classList.add("changeBg2P");
+            button[11].classList.remove("changeBg3PBack");
+            button[12].classList.add("changeBg2P");
+            button[12].classList.remove("changeBg3PBack");
+            button[13].classList.add("changeBg2P");
+            button[13].classList.remove("changeBg3PBack");
+            button[14].classList.add("changeBg2P");
+            button[14].classList.remove("changeBg3PBack");
+            button[15].classList.add("changeBg2P");
+            button[15].classList.remove("changeBg3PBack");
+            button[16].classList.add("changeBg2P");
+            button[16].classList.remove("changeBg3PBack");
+            button[17].classList.add("changeBg2P");
+            button[17].classList.remove("changeBg3P");
+            buttonBox.classList.add("changeBg2Screen");
             article.classList.remove("changeBg3", "changeBg1");
-            // articleP.classList.add("changeBg3P")
+            // // articleP.classList.add("changeBg3P")
             screenValue.classList.remove("changeBg3", "changeBg1");
             article.classList.remove("changeBg3Screen", "changeBg1");
             buttonBox.classList.remove("changeBg3", "changeBg1");
         }else if(boxNum[i].textContent == 3){
             console.log("333");
-            // article.style.backgroundColor = "var(--Dark-violet-key-background)";
-            // bottonBox.style.backgroundColor = "var(--Very-dark-violet-key-background)";
-            article.classList.add("changeBg3");
-            // articleP.classList.add("changeBg3P")
-            screenValue.classList.add("changeBg3");
             article.classList.add("changeBg3Screen");
+            ballBox.classList.add("changeBg3");
+            ballInBox.classList.add("change3Ball");
+            ballInBox.classList.remove("change2Ball");
+            // ballBox.classList.remove("changeBg2Screen", "changeBg1Screen")
+            articleP[0].classList.add("changeBg3P");
+            articleP[1].classList.add("changeBg3P");
+            articleP[2].classList.add("changeBg3P");
+            screenValue.classList.add("changeBg3");
+            screenValue.classList.remove("changeBg2Screen");
+            button[0].classList.add("changeBg3PBack");
+            button[1].classList.add("changeBg3PBack");
+            button[2].classList.add("changeBg3PBack");
+            // buttonOp.textContent = "200";
+            // buttonOp.classList.add("changeBg2SectionButton17th");
+            button[4].classList.add("changeBg3PBack");
+            button[5].classList.add("changeBg3PBack");
+            button[6].classList.add("changeBg3PBack");
+            button[7].classList.add("changeBg3PBack");
+            button[8].classList.add("changeBg3PBack");
+            button[9].classList.add("changeBg3PBack");
+            button[10].classList.add("changeBg3PBack");
+            button[11].classList.add("changeBg3PBack");
+            button[12].classList.add("changeBg3PBack");
+            button[13].classList.add("changeBg3PBack");
+            button[14].classList.add("changeBg3PBack");
+            button[15].classList.add("changeBg3PBack");
+            // button[16].classList.add("changeBg3P");
+            // button[17].classList.add("changeBg3P");
             buttonBox.classList.add("changeBg3");
         }
         
@@ -50,10 +146,10 @@ for(let i = 0; i < boxNum.length; i++){
 
 
 
-let ball = document.querySelector(".ball");
-let box = document.querySelector(".box");
+// let ball = document.querySelector(".ball");
+// let box = document.querySelector(".box");
 let screen = document.querySelector("h1");
-// let numbers = document.querySelectorAll("main .number");
+let numbers = document.querySelectorAll("main .number");
 let keys = document.querySelectorAll("main .number").textContent;
 let operator = document.querySelectorAll("main .operator");
 let opKeys = document.querySelectorAll("main .operator").textContent;
