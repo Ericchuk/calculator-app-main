@@ -126,10 +126,11 @@ for(let i = 0; i < boxNum.length; i++){
 
 
 let screen = document.querySelector("h1");
+let screen2 = document.querySelector(".holder2");
 let numbers = document.querySelectorAll("main .number");
 let keys = document.querySelectorAll("main .number").textContent;
-let operator = document.querySelectorAll("main .operator");
-let opKeys = document.querySelectorAll("main .operator").textContent;
+let sign = document.querySelectorAll("main .sign");
+let opKey = document.querySelector(".operator2");
 let holder = "";
 let holder2 = '';
 let operatorHolder = "";
@@ -144,40 +145,35 @@ for(let i = 0; i < numbers.length; i++){
             return;
         }
         holder += numbers[i].textContent;
-        // eval(holder);/
-        screen.textContent = holder;
-        // screen.textContent = numbers[i].textContent;
-        // console.log(numbers[i].textContent);
+        screen.textContent = holder
     }
 
     numbers[i].addEventListener("click", eachValuetoscreen);
 }
 
-// let equal = document.querySelector("main div:last-child");
-// function evaluate(){
-//     if(holder != "" && holder2 != "" && operator != ""){
-//         result = `${holder} ${operator} ${holder2}`
-//         screen.textContent = result; 
-//     }
-// }
-// equal.addEventListener("click", evaluate);
-// for(let i = 0; i < operator.length; i++){
-//     function useOperator(){
-//         if(!holder){
-//             return;
-//         }
-//         haveDecimalPoint = false;
-//         const operationName = operator[i].textContent;
-//         if(holder && holder2 && operatorHolder){
-//             mathOperation();
-//         }else{
-//             result = parseFloat(holder);
-//         }
-//         clearVar(operationName);
-//         console.log(result)
-//     }
-//     operator[i].addEventListener("click", useOperator);
-// }
+for(let i = 0; i < sign.length; i++){
+    
+    function moveUp(){
+        holder += sign[i].textContent;
+        holder.textContent;
+        screen.textContent = holder
+        // console.log(sign[i].textContent);
+    }
 
-// function clearVar(name = ""){
-//     holder2 += `${holder} ${name} `;
+    sign[i].addEventListener("click", moveUp)
+}
+
+let equalBtn = document.querySelector(".equal");
+function equal(){
+    let result = eval(holder);
+    // console.log(result)
+    screen.textContent = result;
+}
+
+equalBtn.addEventListener("click", equal);
+
+function reset(){
+    screen.textContent = 0;
+    holder.textContent = 0;
+}
+opKey.addEventListener("click", reset);

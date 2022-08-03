@@ -173,7 +173,18 @@ main h1{
     display: flex;
     justify-content:flex-end;
     align-items: center;
-    font-size:40px;
+    position: relative;
+    font-size: 40px;
+}
+.up{
+    font-size:20px;
+    position: absolute;
+    top:10px;
+}
+.holder2{
+    font-size: 40px;
+    position: absolute;
+    top:35px;
 }
 main div{
     /* border:2px solid bisque; */
