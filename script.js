@@ -151,11 +151,12 @@ for(let i = 0; i < numbers.length; i++){
 
 for(let i = 0; i < sign.length; i++){
     
-    function moveUp(){
+    function putSIgn(){
         screen.textContent += sign[i].textContent;
+        haveDecimalPoint = false;
     }
 
-    sign[i].addEventListener("click", moveUp)
+    sign[i].addEventListener("click", putSIgn)
 }
 
 let equalBtn = document.querySelector(".equal");
