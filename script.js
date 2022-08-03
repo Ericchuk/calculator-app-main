@@ -1,5 +1,4 @@
 let boxNum = document.querySelectorAll(".change p");
-console.log(boxNum);
 let article = document.querySelector("article");
 let articleP = document.querySelectorAll("article p");
 let ballBox = document.querySelector(".box");
@@ -131,12 +130,10 @@ let numbers = document.querySelectorAll("main .number");
 let keys = document.querySelectorAll("main .number").textContent;
 let sign = document.querySelectorAll("main .sign");
 let opKey = document.querySelector(".operator2");
-let holder = "";
-let holder2 = '';
-let operatorHolder = "";
-let result = null;
-let haveDecimalPoint = false;
+let del = document.querySelector(".del");
 
+let haveDecimalPoint = false;
+screen.textContent = "";
 for(let i = 0; i < numbers.length; i++){
     function eachValuetoscreen(){
         if(numbers[i].textContent === "." && !haveDecimalPoint){
@@ -144,8 +141,9 @@ for(let i = 0; i < numbers.length; i++){
         }else if(numbers[i].textContent === "." && haveDecimalPoint){
             return;
         }
-        holder += numbers[i].textContent;
-        screen.textContent = holder
+
+        screen.textContent += numbers[i].textContent;
+        // screen.textContent = holder
     }
 
     numbers[i].addEventListener("click", eachValuetoscreen);
@@ -154,10 +152,7 @@ for(let i = 0; i < numbers.length; i++){
 for(let i = 0; i < sign.length; i++){
     
     function moveUp(){
-        holder += sign[i].textContent;
-        holder.textContent;
-        screen.textContent = holder
-        // console.log(sign[i].textContent);
+        screen.textContent += sign[i].textContent;
     }
 
     sign[i].addEventListener("click", moveUp)
@@ -165,15 +160,19 @@ for(let i = 0; i < sign.length; i++){
 
 let equalBtn = document.querySelector(".equal");
 function equal(){
-    let result = eval(holder);
-    // console.log(result)
+    let result = eval(screen.textContent);
     screen.textContent = result;
 }
 
 equalBtn.addEventListener("click", equal);
 
 function reset(){
-    screen.textContent = 0;
-    holder.textContent = 0;
+    screen.textContent = "";
 }
 opKey.addEventListener("click", reset);
+
+function delFunc(){
+       screen.textContent = screen.textContent.slice(0, -1);
+}
+
+del.addEventListener("click", delFunc)
